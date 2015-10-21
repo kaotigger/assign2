@@ -101,8 +101,8 @@ void draw(){
     if(z<0){
     z=0;
     }
-    if(z>195){
-      z=195;
+    if(x>=v-40 && v+40>x && y>=t-40 && y<t+40 && z<195 ){
+    z +=19.5;
     }
    if(x>=x1-40 && x1+40>x && y>=y1-40 && y<y1+60){
     z -=39;
@@ -111,7 +111,6 @@ void draw(){
     image(enemy,x1,y1);
     }
     if (x>=v-40 && v+40>x && y>=t-40 && y<t+40  ){
-    z +=19.5;
     t=floor(random(415));
     v=floor(random(590));
     image(treasure,v,t);
@@ -129,7 +128,7 @@ void draw(){
   if(mouseX<440 && mouseY<340 && 200<mouseX && 300<mouseY && gameover){
     image(end1,0,0);
   }
-  if(z<0){
+  if(z<=0){
     gameover = true;
   }
 }
