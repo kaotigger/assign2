@@ -47,7 +47,7 @@ void setup(){
   t=floor(random(415));
   v=floor(random(590));
   gamemode=false;
-  speed=7;
+  speed=6;
   gameover=false;
   x1=0;
   y1=floor(random(415));
